@@ -19,47 +19,65 @@
             <li><a href="hotels.html">Гостиницы</a></li>
          </ul>
          <div class="logo">
-         <a href="index.html">
-            <img src="/img/logo.jpg" width="138" height="70" alt="герб города Седоны">
-         </a>
+            <a href="index.html">
+               <img src="/img/logo.jpg" width="138" height="70" alt="герб города Седоны">
+            </a>
          </div>
       </nav>
-  </header>
-  <main>
-     <h3>Инфраструктура:</h3>
-     <form action="https://echo.htmlacademy.ru/courses" method="post">
-      <input type="checkbox" name="bonuses" checked>Бассейн<br>
-      <input type="checkbox" name="bonuses">Парковка<br>
-      <input type="checkbox" name="bonuses">Wi-Fi<br>
-      </form>
-      <!-- <ul>
-         <li>Бассейн</li>
-         <li>Парковка</li>
-         <li>Wi-Fi</li>
-      </ul> -->
-      <h3>Тип жилья:</h3>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
-         <input type="checkbox" name="bonuses" checked>Гостиница<br>
-         <input type="checkbox" name="bonuses" checked>Мотель<br>
-         <input type="checkbox" name="bonuses" checked>Апартаменты<br>
+   </header>
+   <main>
+      <section>
+         <h2>Выбор дополнительных опций</h2>
+
+         <form method="GET" action="https://echo.htmlacademy.ru">
+            <fieldset>
+               <legend>Инфраструктура:</legend>
+                  <ul>
+                     <li>
+                        <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+                        <label for="filter-swimming-pool">Бассейн</label>
+                     </li>
+                     <li>
+                        <input type="checkbox" name="parking" id="filter-parking">
+                        <label for="filter-parking">Парковка</label>
+                     </li>
+                     <li>
+                        <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                        <label for="filter-wi-fi">Wi-Fi</label>
+                     </li>
+                  </ul>
+            </fieldset>
+            <fieldset>
+               <legend>Тип жилья:</legend>
+               <ul>
+                  <li>
+                     <input type="checkbox" name="inn" id="filter-inn" checked>
+                     <label for="filter-inn">Гостиница</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                     <label for="filter-hotel">Отель</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" name="apartments" id="filter-apartments" checked>
+                     <label for="filter-apartments">Апартаменты</label>
+                  </li>
+               </ul>
+            </fieldset>
          </form>
-      <!-- <ul>
-         <li>Гостиница</li>
-         <li>Мотель</li>
-         <li>Апартаменты</li>
-      </ul> -->
+      </section>
       <section>
          <h2>Фильтр по стоимости номера</h2>
-      <h3>Стоимость в сутки, &#8381;:</h3>
-      <table border="1">
-         <tr>
-            <td>От 0</td>
-            <td>До 3000</td>
-          </tr>
-      </table>
-      <input type="range" min="0" max="3000">
-      <br>
-      <button type="submit">Показать</button>
+            <h3></h3>
+         <form method="GET" action="https://echo.htmlacademy.ru">
+            <label for="name">Стоимость в сутки, &#8381;:</label>
+            <br>
+            <input type="text" id="price" name="price" value="От 0">
+            <br>
+            <input type="range" min="0" max="3000">
+            <br>
+            <button type="submit">Показать</button>
+         </form>
       </section>
       <h2>
          Найдено: 3
@@ -68,58 +86,46 @@
          Сортировка:
       </h3>
       <ul>
-         <li>По цене</li>
-         <li>По типу</li>
-         <li>По рейтингу</li>
+         <li><a href="#">По цене</a></li>
+         <li><a href="#">По типу</a></li>
+         <li><a href="#">По рейтингу</a></li>
       </ul>
       <img src="https://via.placeholder.com/135x90"">
       <h2>
-         Amara Resort & Spa
+         <a href="#">Amara Resort & Spa</a>
       </h2>
-      <table>
-         <tr>
-            <td>Гостиница</td>
-            <td>От 4000</td>
-          </tr>
-      </table>
-      <button type="submit">Подробнее</button>
-      <button type="submit">Забронировать</button>
-      <button type="submit">Рейтинг: 8,5</button><br>
+         <p>Гостиница</p>
+         <p>От 4000</p>
+         <button>Подробнее</button>
+         <button>Забронировать</button>
+         <button>Рейтинг: 8,5</button><br>
       
       <img src="https://via.placeholder.com/135x90"">
       <h2>
-         Desert Quail Inn
+         <a href="#">Desert Quail Inn</a>
       </h2>
-      <table>
-         <tr>
-            <td>Мотель</td>
-            <td>От 3000</td>
-          </tr>
-      </table>
-      <button type="submit">Подробнее</button>
-      <button type="submit">Забронировать</button>
-      <button type="submit">Рейтинг: 8,9</button><br>
+         <p>Мотель</p>
+         <p>От 3000</p>
+         <button>Подробнее</button>
+         <button>Забронировать</button>
+         <button>Рейтинг: 8,9</button><br>
       <img src="https://via.placeholder.com/135x90"">
       <h2>
-         Villas at Poco Diablo
+         <a href="#">Villas at Poco Diablo</a>
       </h2>
-      <table>
-         <tr>
-            <td>Апартаменты</td>
-            <td>От 2000</td>
-          </tr>
-      </table>
-      <button type="submit">Подробнее</button>
-      <button type="submit">Забронировать</button>
-      <button type="submit">Рейтинг: 9,2</button>
-  </main>
-  <footer>
-   <section class="contacts">
-      <p>
+         <p>Апартаменты</p>
+         <p>От 2000</p>
+         <button>Подробнее</button>
+         <button>Забронировать</button>
+         <button>Рейтинг: 9,2</button>
+   </main>
+   <footer>
+      <section class="contacts">
+         <p>
          #visitSEDONA
-      </p>
-      <a href="tel:+78005558628">+7 800 555-86-28</a>
-   </section>
+         </p>
+         <a href="tel:+78005558628">+7 800 555-86-28</a>
+      </section>
       <section class="social">
       <ul>
          <li>
@@ -132,8 +138,7 @@
             <a href="#">Youtube</a>
          </li>
       </ul>
-   </section>
+      </section>
   </footer>
-
-  </body>
-  </html>
+</body>
+</html>
