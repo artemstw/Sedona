@@ -1,0 +1,154 @@
+body {
+   font-family: 'PT Sans', sans-serif;
+   font-size: 14px;
+   line-height: 21px;
+   background: #888888;
+   text-transform: uppercase;
+}
+
+h3, .search-button {
+   font-size: 21px;
+   font-weight: 700;
+   }
+
+header, main, footer {
+   width: 1200px;
+   margin: 0 auto;
+}
+
+nav {
+   height: 70px;
+   background-color: #fff;
+}
+
+ul {
+display: flex;
+margin: 0 auto;
+}
+
+li {
+   font-weight: bold;
+   padding: 30px;
+   list-style-type: none;
+   
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+.main-header-logo {
+   text-align: center;
+}
+
+.sedona-features {
+   height: 216px;
+   color: #000;
+   background-color: #fff;
+   text-align: center;
+}
+
+.sedona-features-header {
+   width: 470px;
+   margin: 42.5px auto 16.5px auto;
+   line-height: 26px;
+}
+
+.sedona-features-text {
+   width: 519px;
+   margin: 0 auto 51px auto;
+   color: #333333;
+}
+
+.container-1 {
+   display: flex;
+   flex-direction: column;
+   background: url(/img/background_photo.png);
+   height: 509px;
+   }
+
+.advantages {
+   display: flex;
+   background: url(../img/image_1.png) no-repeat right;
+}
+
+.advantage {
+   background-color: #81B3D2;
+   text-align: center;
+   color: white;
+   width: 400px;
+   height: 256px;
+}
+
+.advantages-paragraph {
+   width: 302px;
+   text-align: center;
+}
+
+.bonuses {
+   display: flex;
+   text-align: center;
+   background-color: #fff;
+
+}
+
+.bonuses-house {
+      background: url('../img/icon-1.png') no-repeat top;
+      padding-top: 80px;
+}
+
+.bonuses-food {
+   background: url('../img/icon-3.png') no-repeat top;
+      padding-top: 80px;
+}
+
+.bonuses-souvenirs {
+   background: url('../img/icon-2.png') no-repeat top;
+      padding-top: 80px;
+}
+
+.bonuses-text {
+   width: 254px;
+}
+
+.bridge {
+   display: flex;
+   background: url(../img/image-2.png) no-repeat left;
+}
+.bridge-advantages {
+   background-color: #81B3D2;
+   text-align: center;
+   color: white;
+   width: 400px;
+   height: 256px;
+}
+
+.sedona-advantages {
+   display: flex;
+   width: 1200px;
+   height: 256px;
+   background: #EEEEEE;
+   text-align: center;
+}
+
+.search {
+   text-align: center;
+}
+
+.search-button {
+width: 568px;
+height: 86px;
+background-color: hsla(23, 15%, 40%, 1);
+border: none;
+text-transform: uppercase;
+color: white;
+}
+
+footer {
+   background-image: url(/img/map.png);
+}
+
+.contacts {
+   height: 594px;
+}
