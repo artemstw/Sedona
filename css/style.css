@@ -23,9 +23,16 @@ body {
    
 }
 
+.main-header-logo {
+   position: absolute;
+   top: 0;
+   left: 531px;
+   right: 531px;
+}
+
 .welcome-group {
    text-align: center;
-   background-image: url("/img/background-index.jpg");
+   background-image: url("img/background-index.jpg");
    background-position: center;
    padding-top: 77.35px;
    padding-bottom: 80.76px;
@@ -91,7 +98,7 @@ color: inherit;
 }
 
 .town {
-   background: url("/img/image-1.jpg") no-repeat right;
+   background: url("img/image-1.jpg") no-repeat right;
 }
 
 .town-advantage {
@@ -125,17 +132,17 @@ color: inherit;
 }
 
 .item-house {
-      background: url("../img/icon-1.svg") no-repeat top;
+      background: url("img/icon-1.svg") no-repeat top;
       padding-top: 80px;
 }
 
 .item-food {
-   background: url("../img/icon-3.svg") no-repeat top;
+   background: url("img/icon-3.svg") no-repeat top;
       padding-top: 80px;
 }
 
 .item-souvenirs {
-   background: url("../img/icon-2.svg") no-repeat top;
+   background: url("img/icon-2.svg") no-repeat top;
       padding-top: 80px;
 }
 
@@ -145,7 +152,7 @@ color: inherit;
 
 .bridge {
    display: flex;
-   background: url(../img/image-2.jpg) no-repeat left;
+   background: url("img/image-2.jpg") no-repeat left;
 }
 .bridge-advantage {
    background-color: #81B3D2;
@@ -192,7 +199,7 @@ color: white;
 }
 
 footer {
-   background-image: url(/img/map.png);
+   background-image: url("img/map.png");
    background-color: var(--basic-white);
    height: 120px;
    display: flex;
