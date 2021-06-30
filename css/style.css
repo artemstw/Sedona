@@ -43,15 +43,15 @@ header, main, footer {
    background-color: var(--basic-white);
 }
 
-ul {
-   display: flex;
+.site-navigation {
+   list-style: none;
    margin: 0 auto;
+   display: flex;
 }
 
 li {
-   font-weight: bold;
+   font-weight: 700;
    padding: 30px;
-   list-style-type: none;
 }
 
 .main-header-logo {
