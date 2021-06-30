@@ -1,13 +1,12 @@
 /* Variables */
 :root {
    --basic-black: #000000;
-   --basic-extra-dark: #242424;
-   --basic-dark: #aba9a7;
-   --basic-neutral: #e5e5e5;
-   --basic-extra-light: #f8f5f2;
    --basic-white: #ffffff;
-
-   --special: #663d15;
+   --basic-grey: #f2f2f2;
+   --light-blue: #81b3d2;
+   --light-grey: #eeeeee;
+   --basic-brown: #333333;
+   --extra-brown: #766357;
 }
 
 body {
@@ -17,9 +16,8 @@ body {
    font-family: "PT Sans", Arial, sans-serif;
    font-size: 14px;
    line-height: 21px;
-   background: #888888;
    text-transform: uppercase;
-   background-color: var(--basic-neutral);
+   background-color: var(--basic-grey);
    
 }
 
@@ -32,7 +30,7 @@ body {
 
 .welcome-group {
    text-align: center;
-   background-image: url("img/background-index.jpg");
+   background-image: url("../img/background-index.jpg");
    background-position: center;
    padding-top: 77.35px;
    padding-bottom: 80.76px;
@@ -50,7 +48,7 @@ header, main, footer {
 
 nav {
    height: 70px;
-   background-color: #fff;
+   background-color: var(--basic-white);
 }
 
 ul {
@@ -77,7 +75,7 @@ color: inherit;
 .sedona-features {
    height: 216px;
    color: #000;
-   background-color: #fff;
+   background-color: var(--basic-white);
    text-align: center;
    height: 216px;
 }
@@ -93,18 +91,18 @@ color: inherit;
 .sedona-features-text {
    width: 519px;
    margin: 0 auto 51px auto;
-   color: #333333;
+   color: var(--basic-brown);
    padding-bottom: 51px;
 }
 
 .town {
-   background: url("img/image-1.jpg") no-repeat right;
+   background: url("../img/image-1.jpg") no-repeat right;
 }
 
 .town-advantage {
-   background-color: #81B3D2;
+   background-color: var(--light-blue);
    text-align: center;
-   color: white;
+   color: var(--basic-white);
    width: 400px;
    height: 256px;
 }
@@ -126,38 +124,39 @@ color: inherit;
 .bonuses {
    display: flex;
    text-align: center;
-   background-color: #fff;
+   background-color: var(--basic-white);
    padding-top: 60px;
 
 }
 
 .item-house {
-      background: url("img/icon-1.svg") no-repeat top;
+      background: url("../img/icon-1.svg") no-repeat top;
       padding-top: 80px;
 }
 
 .item-food {
-   background: url("img/icon-3.svg") no-repeat top;
+   background: url("../img/icon-3.svg") no-repeat top;
       padding-top: 80px;
 }
 
 .item-souvenirs {
-   background: url("img/icon-2.svg") no-repeat top;
+   background: url("../img/icon-2.svg") no-repeat top;
       padding-top: 80px;
 }
 
 .bonuses-text {
+   color: var(--basic-brown);
    width: 254px;
 }
 
 .bridge {
    display: flex;
-   background: url("img/image-2.jpg") no-repeat left;
+   background: url("../img/image-2.jpg") no-repeat left;
 }
 .bridge-advantage {
-   background-color: #81B3D2;
+   background-color: var(--light-blue);
    text-align: center;
-   color: white;
+   color: var(--basic-white);
    width: 400px;
    height: 256px;
 }
@@ -170,8 +169,13 @@ color: inherit;
    display: flex;
    width: 1200px;
    height: 256px;
-   background: #EEEEEE;
+   background: var(--light-grey);
    text-align: center;
+}
+
+
+.number {
+   color: var(--basic-brown);
 }
 
 .interested-header {
@@ -188,7 +192,7 @@ color: inherit;
 .search-button {
 width: 568px;
 height: 86px;
-background-color: hsla(23, 15%, 40%, 1);
+background-color: var(--extra-brown);
 border: none;
 text-transform: uppercase;
 color: white;
@@ -199,7 +203,7 @@ color: white;
 }
 
 footer {
-   background-image: url("img/map.png");
+   background-image: url("../img/map.png");
    background-color: var(--basic-white);
    height: 120px;
    display: flex;
