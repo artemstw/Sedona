@@ -21,6 +21,39 @@ body {
    
 }
 
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+h3, .search-button {
+   font-size: 21px;
+   font-weight: 700;
+}
+
+header, main, footer {
+   width: 1200px;
+   margin: 0 auto;
+}
+
+.main-navigation {
+   line-height: 26px;
+   height: 56px;
+   color: var(--basic-black);
+   background-color: var(--basic-white);
+}
+
+ul {
+   display: flex;
+   margin: 0 auto;
+}
+
+li {
+   font-weight: bold;
+   padding: 30px;
+   list-style-type: none;
+}
+
 .main-header-logo {
    position: absolute;
    top: 0;
@@ -36,45 +69,13 @@ body {
    padding-bottom: 80.76px;
 }
 
-h3, .search-button {
-   font-size: 21px;
-   font-weight: 700;
-   }
-
-header, main, footer {
-   width: 1200px;
-   margin: 0 auto;
-}
-
-nav {
-   height: 70px;
-   background-color: var(--basic-white);
-}
-
-ul {
-display: flex;
-margin: 0 auto;
-}
-
-li {
-   font-weight: bold;
-   padding: 30px;
-   list-style-type: none;
-   
-}
-
-a {
-text-decoration: none;
-color: inherit;
-}
-
 .main-header-logo {
    text-align: center;
 }
 
 .sedona-features {
    height: 216px;
-   color: #000;
+   color: var(--basic-black);
    background-color: var(--basic-white);
    text-align: center;
    height: 216px;
@@ -130,18 +131,18 @@ color: inherit;
 }
 
 .item-house {
-      background: url("../img/icon-1.svg") no-repeat top;
-      padding-top: 80px;
+   background: url("../img/icon-1.svg") no-repeat top;
+   padding-top: 80px;
 }
 
 .item-food {
    background: url("../img/icon-3.svg") no-repeat top;
-      padding-top: 80px;
+   padding-top: 80px;
 }
 
 .item-souvenirs {
    background: url("../img/icon-2.svg") no-repeat top;
-      padding-top: 80px;
+   padding-top: 80px;
 }
 
 .bonuses-text {
@@ -200,6 +201,7 @@ color: white;
 
 .search-text {
    padding-bottom: 24px;
+   line-height: 24px;
 }
 
 footer {
@@ -211,4 +213,12 @@ footer {
 
 .social {
    display: flex;
+}
+
+.sedona-tag {
+   font-size: 21px;
+}
+
+.sedona-phone {
+   font-size: 21px;
 }
