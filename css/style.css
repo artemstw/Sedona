@@ -5,8 +5,11 @@
    --basic-grey: #f2f2f2;
    --light-blue: #81b3d2;
    --light-grey: #eeeeee;
+   --extra-grey: #bdbbbc;
    --basic-brown: #333333;
    --extra-brown: #766357;
+   --dark-brown: #604e43;
+   --extra-dark-brown: #503e33;
 }
 
 body {
@@ -17,8 +20,9 @@ body {
    font-size: 14px;
    line-height: 21px;
    text-transform: uppercase;
+   color: var(--basic-black);
    background-color: var(--basic-grey);
-   
+
 }
 
 a {
@@ -32,45 +36,55 @@ h3, .search-button {
 }
 
 header, main, footer {
-   width: 1200px;
-   margin: 0 auto;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .main-navigation {
-   line-height: 26px;
-   height: 56px;
-   color: var(--basic-black);
-   background-color: var(--basic-white);
+    line-height: 26px;
+    height: 56px;
+    background-color: var(--basic-white);
 }
 
 .site-navigation {
-   list-style: none;
-   margin: 0 auto;
-   display: flex;
+    list-style: none;
+    margin: 0 auto;
+    display: flex;
 }
 
 li {
-   font-weight: 700;
-   padding: 30px;
+    font-weight: 700;
+    padding: 30px;
+}
+
+/* User Navigation */
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    background-color: var(--basic-white);
 }
 
 .main-header-logo {
-   position: absolute;
-   top: 0;
-   left: 531px;
-   right: 531px;
+    position: absolute;
+    top: 0;
+    left: 531px;
+    right: 531px;
+    text-align: center;
 }
 
 .welcome-group {
-   text-align: center;
-   background-image: url("../img/background-index.jpg");
-   background-position: center;
-   padding-top: 77.35px;
-   padding-bottom: 80.76px;
+    text-align: center;
+    background-image: url("../img/background-index.jpg");
+    background-repeat: no-repeat;
+    height: 432px;
+    padding-top: 77.35px;
 }
 
-.main-header-logo {
-   text-align: center;
+.shape {
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    top: 508px;
 }
 
 .sedona-features {
@@ -127,7 +141,6 @@ li {
    text-align: center;
    background-color: var(--basic-white);
    padding-top: 60px;
-
 }
 
 .item-house {
@@ -153,6 +166,7 @@ li {
 .bridge {
    display: flex;
    background: url("../img/image-2.jpg") no-repeat left;
+   /* background-color: var(--light-blue); */
 }
 .bridge-advantage {
    background-color: var(--light-blue);
@@ -174,8 +188,7 @@ li {
    text-align: center;
 }
 
-
-.number {
+.number, .sedona-advantages-text {
    color: var(--basic-brown);
 }
 
@@ -190,13 +203,26 @@ li {
    background-color: var(--basic-white);
 }
 
+/* Button */
+
 .search-button {
 width: 568px;
 height: 86px;
 background-color: var(--extra-brown);
 border: none;
+vertical-align: middle;
 text-transform: uppercase;
-color: white;
+color: var(--basic-white);
+}
+
+.search-button:hover {
+    background-color: var(--extra-brown);
+}
+.search-button:focus {
+    background-color: var(--dark-brown);
+}
+.search-button:active {
+    background-color: var(--extra-dark-brown);
 }
 
 .search-text {
@@ -204,7 +230,7 @@ color: white;
    line-height: 24px;
 }
 
-footer {
+.page-footer {
    background-image: url("../img/map.png");
    background-color: var(--basic-white);
    height: 120px;
@@ -213,6 +239,12 @@ footer {
 
 .social {
    display: flex;
+   list-style: none;
+   text-align: center;
+}
+
+.social li{
+    background-color: var(--light-blue);
 }
 
 .sedona-tag {
