@@ -1,33 +1,69 @@
-/* Variables */
-:root {
-   --basic-black: #000000;
-   --basic-white: #ffffff;
-   --basic-grey: #f2f2f2;
-   --light-blue: #81b3d2;
-   --light-grey: #eeeeee;
-   --extra-grey: #bdbbbc;
-   --basic-brown: #333333;
-   --extra-brown: #766357;
-   --dark-brown: #604e43;
-   --extra-dark-brown: #503e33;
+/* Fonts */
+
+@font-face {
+    font-family: "PT Sans";
+    src: local("PT Sans"),
+        local("PT Sans Regular"),
+        url("../fonts/PTSans.woff2") format("woff2"),
+        url("../fonts/PTSans.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
 }
+
+@font-face {
+    font-family: "PT Sans";
+
+    src: local("PT Sans Bold"),
+        url("../fonts/PTSans-Bold.woff2") format("woff2"),
+        url("../fonts/PTSans-Bold.woff") format("woff");
+        font-weight: 700;
+        font-style: normal;
+}
+
+/* Variables */
+
+:root {
+    --basic-black: #000000;
+    --basic-white: #ffffff;
+    --light-blue: #81b3d2;
+    --basic-grey: #f2f2f2;
+    --light-grey: #eeeeee;
+    --extra-grey: #bdbbbc;
+    --basic-brown: #333333;
+    --extra-brown: #766357;
+    --dark-brown: #604e43;
+    --extra-dark-brown: #503e33;
+    --extra-dark-blue: #5496bd;
+    --shadow-color: rgba(0,1,1,0.2);
+}
+
+/* Global */
 
 body {
    min-width: 1200px;
-   margin: 0;
+   margin: 0 40px;
    padding: 0;
    font-family: "PT Sans", Arial, sans-serif;
    font-size: 14px;
    line-height: 21px;
    text-transform: uppercase;
    color: var(--basic-black);
-   background-color: var(--basic-grey);
-
+   background-color: var(--basic-white);
+   box-shadow: 0 15px 15px var(--shadow-color);
 }
 
-a {
+.page a {
    text-decoration: none;
-   color: inherit;
+}
+
+.page a:focus {
+    outline-color: var(--extra-dark-blue);
+}
+
+.page {
+    height: 100%;
+    width: 1280px;
+    margin: 0 auto;
 }
 
 h3, .search-button {
@@ -35,10 +71,18 @@ h3, .search-button {
    font-weight: 700;
 }
 
-header, main, footer {
-    width: 1200px;
-    margin: 0 auto;
+.hidden-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
 }
+
+/* User Navigation */
 
 .main-navigation {
     line-height: 26px;
@@ -253,4 +297,8 @@ color: var(--basic-white);
 
 .sedona-phone {
    font-size: 21px;
+}
+
+.hotels-list {
+    text-decoration: none;
 }

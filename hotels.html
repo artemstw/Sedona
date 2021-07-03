@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор гостиницы в Седоне</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="favicon.ico" />
+</head>
+<body class="page-body">
+    <header class="main-header">
+        <a class="main-header-logo">
+            <img src="img/logo.svg" width="138" height="70" alt="Герб города Седоны">
+        </a>
+
+        <nav class="main-navigation">
+            <ul class="site-navigation">
+                <li class="site-navigation-item"><a href="information.html">Информация</a></li>
+                <li class="site-navigation-item"><a href="photo.html">Фото и видео</a></li>
+                <li class="site-navigation-item"><a href="map.html">Карта штата</a></li>
+                <li class="site-navigation-item"><a href="blank.html">Гостиницы</a></li>
+            </ul>
+        </nav>
+        <h1 class="hidden-title">Выбор гостиницы в Седоне</h1>
+    </header>
+    <main>
+        <section class="search-filter">
+            <h2 class="hidden-title">Выбор дополнительных опций</h2>
+                <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru">
+                    <section class="search-filter-grid">
+                    <fieldset class="checkbox-filters">
+                        <legend class="filter-title">Инфраструктура:</legend>
+                        <ul>
+                            <li>
+                                <input class="input-checkbox" type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+                                <label class="filter-label filter-text" for="filter-swimming-pool">Бассейн</label>
+                            </li>
+                            <li>
+                                <input class="input-checkbox" type="checkbox" name="parking" id="filter-parking">
+                                <label class="filter-label filter-text" for="filter-parking">Парковка</label>
+                            </li>
+                            <li>
+                                <input class="input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                                <label class="filter-label filter-text" for="filter-wi-fi">Wi-Fi</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="filter-title">Тип жилья:</legend>
+                        <ul>
+                            <li>
+                                <input class="input-checkbox" type="checkbox" name="inn" id="filter-inn" checked>
+                                <label class="filter-label filter-text" for="filter-inn">Гостиница</label>
+                            </li>
+                            <li>
+                                <input class="input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                                <label class="filter-label filter-text" for="filter-hotel">Отель</label>
+                            </li>
+                            <li>
+                                <input class="input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
+                                <label class="filter-label filter-text" for="filter-apartments">Апартаменты</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="price-filter">
+                        <legend class="filter-title">Стоимость в сутки, &#8381;:</legend>
+                        <div class="filter-range">
+                        <div class="price-controls">
+                            <input class="price-input" type="text" name="min-price" placeholder="От 0" aria-label="Минимальная стоимость в сутки">
+                            <input class="price-input" type="text" name="max-price" placeholder="До 3000" aria-label="Максимальная стоимость в сутки">
+                        </div>
+
+                        <div class="range-controls">
+                            <div class="toggle toggle-min" tab-index="0" aria-label="Ползунок минимальной цены"></div>
+                            <div class="toggle toggle-max" tab-index="0" aria-label="Ползунок максимальной цены"></div>
+                        </div>
+                            <button class="filter-button" type="submit" aria-label="Показать подходящие по параметрам отели">Показать</button>
+                    </fieldset>
+                </form>
+        </section>
+        <section class="sorting-results">
+            <h2 class="hidden-title">Сортировка результатов поиска отеля</h2>
+            <p class="sorting-paragraph">Найдено: 3</p>
+            <span class="sorting-text">Сортировка:</span>
+                <ul class="sorting-type">
+                    <li class="sorting-item"><a href="#">По цене</a></li>
+                    <li class="sorting-item"><a href="#">По типу</a></li>
+                    <li class="sorting-item"><a href="#">По рейтингу</a></li>
+                </ul>
+            <div class="arrows">
+                <button class="increase-arrow" aria-label="Сортировка по возрастанию цены">
+                    <svg width="11" height="10">
+                        <path d="M5.5 0L0 10H11L5.5 0Z" fill="#cacaca"/>
+                    </svg>
+                </button>
+                <button class="decrease-arrow" aria-label="Сортировка по убыванию цены">
+                    <svg width="11" height="10" viewBox="0 0 11 10"">
+                        <path d="M5.5 10L0 0H11" fill="#81b3d2"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <section>
+            <h2 class="hidden-title">Список гостиниц Седоны с фотографиями</h2>
+            <ul>
+                <li class="hotels-list">
+                    <img src="img/amara-resort.jpg" width="135" height="90" alt="Гостиница Амара Ресорт энд Спа">
+                    <h2>
+                    <a href="#">Amara Resort & Spa</a>
+                    </h2>
+                    <p>Гостиница</p>
+                    <p>От 4000</p>
+                    <button>Подробнее</button>
+                    <button>Забронировать</button>
+                    <button>Рейтинг: 8,5</button>
+                </li>
+                <li class="hotels-list">
+                    <img src="img/desert-quail.jpg" width="135" height="90" alt="Мотель Дезерт Куэйл">
+                    <h2>
+                    <a href="#">Desert Quail Inn</a>
+                    </h2>
+                    <p>Мотель</p>
+                    <p>От 3000</p>
+                    <button>Подробнее</button>
+                    <button>Забронировать</button>
+                    <button>Рейтинг: 8,9</button>
+                </li>
+                <li class="hotels-list">
+                    <img src="img/villas-at-poco.jpg" width="135" height="90" alt="Апаратаменты Виллас ат Поко Диабло">
+                    <h2>
+                    <a href="#">Villas at Poco Diablo</a>
+                    </h2>
+                    <p>Апартаменты</p>
+                    <p>От 2000</p>
+                    <button>Подробнее</button>
+                    <button>Забронировать</button>
+                    <button>Рейтинг: 9,2</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <section class="contacts">
+            <p>
+            #visitSEDONA
+            </p>
+            <a href="tel:+78005558628">+7 800 555-86-28</a>
+        </section>
+        <section class="social">
+            <ul>
+                <li>
+                    <a href="#">Twitter</a>
+                </li>
+                <li>
+                    <a href="#">Facebook</a>
+                </li>
+                <li>
+                    <a href="#">Youtube</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
