@@ -52,9 +52,7 @@ body {
    box-shadow: 0 15px 15px var(--shadow-color);
 }
 
-.page a {
-   text-decoration: none;
-}
+
 
 .page a:focus {
     outline-color: var(--extra-dark-blue);
@@ -83,6 +81,16 @@ h3, .search-button {
 }
 
 /* User Navigation */
+
+.site-navigation a {
+   text-decoration: none;
+   color: var(--basic-black);
+}
+
+.sorting-results a {
+    text-decoration: none;
+   color: var(--basic-black);
+}
 
 .main-navigation {
     line-height: 26px;
@@ -121,7 +129,7 @@ li {
     background-image: url("../img/background-index.jpg");
     background-repeat: no-repeat;
     height: 432px;
-    padding-top: 77.35px;
+    padding-top: 77px;
 }
 
 .shape {
@@ -291,14 +299,136 @@ color: var(--basic-white);
     background-color: var(--light-blue);
 }
 
-.sedona-tag {
-   font-size: 21px;
+.contacts {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
 }
 
-.sedona-phone {
-   font-size: 21px;
+/* Стилизация внутренней страницы */
+
+.hotels-list {
+    list-style: none;
+}
+
+.filter-list {
+    list-style: none;
+}
+
+.sorting-item {
+    list-style: none;
+}
+
+.search-filter {
+    color: var(--basic-white);
+}
+
+.filter-title {
+    font-weight: 700;
+}
+
+.price-input {
+    text-align: center;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid var(--basic-white);
+}
+
+.filter-button {
+    width: 137px;
+    height: 36px;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid var(--basic-white);
+}
+
+.search-filter-grid {
+    display: flex;
+    /* height: 217px; */
+    background: url("../img/background-catalog.jpg") no-repeat;
+    margin-bottom: 90px;
+    background-color: var(--light-blue);
+}
+
+.sorting-results {
+    display: flex;
+}
+
+.sorting-paragraph {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.sorting-text {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.sorting-item {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.selected-item{
+    color: var(--light-blue);
+}
+
+.sorting-type {
+    display: flex;
+}
+
+.hotels a {
+    text-decoration: none;
+   color: var(--basic-black);
 }
 
 .hotels-list {
+    display: flex;
+}
+
+.hotels-info {
+    font-weight: 400;
+}
+
+.detailed-button {
+    width: 110px;
+    height: 27px;
+    background: var(--light-blue);
+    color: var(--basic-white);
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+}
+
+.booking-button {
+    width: 142px;
+    height: 27px;
+    background: var(--extra-brown);
+    color: var(--basic-white);
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+}
+
+.hotel-rating {
+    text-align: center;
+    width: 110px;
+    height: 27px;
+    font-weight: 400;
+    background-color: var(--basic-grey);
+}
+
+.contacts a {
     text-decoration: none;
+    color: var(--basic-black);
+}
+
+.social a {
+    text-decoration: none;
+   color: var(--basic-black);
 }
