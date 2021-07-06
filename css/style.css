@@ -35,24 +35,33 @@
     --extra-dark-brown: #503e33;
     --extra-dark-blue: #5496bd;
     --shadow-color: rgba(0,1,1,0.2);
+    --extra-black: hsla(0, 0%, 0%, 1);
 }
 
 /* Global */
 
-body {
+.page-body {
    min-width: 1200px;
-   margin: 0 40px;
+   margin: 0;
    padding: 0;
    font-family: "PT Sans", Arial, sans-serif;
    font-size: 14px;
    line-height: 21px;
+   font-weight: 400;
    text-transform: uppercase;
    color: var(--basic-black);
    background-color: var(--basic-white);
    box-shadow: 0 15px 15px var(--shadow-color);
+
+   min-height: 100%;
+   display: grid;
+   grid-template-rows: min-content 1fr min-content;
+   align-content: start;
 }
 
-
+.page a {
+    text-decoration: none;
+}
 
 .page a:focus {
     outline-color: var(--extra-dark-blue);
@@ -60,11 +69,15 @@ body {
 
 .page {
     height: 100%;
-    width: 1280px;
+    width: 1200px;
     margin: 0 auto;
 }
 
-h3, .search-button {
+.center {
+    text-align: center;
+}
+
+h3 {
    font-size: 21px;
    font-weight: 700;
 }
@@ -80,52 +93,67 @@ h3, .search-button {
     overflow: hidden;
 }
 
-/* User Navigation */
+/* Main Navigation */
 
 .site-navigation a {
-   text-decoration: none;
    color: var(--basic-black);
 }
 
 .sorting-results a {
-    text-decoration: none;
-   color: var(--basic-black);
-}
-
-.main-navigation {
-    line-height: 26px;
-    height: 56px;
-    background-color: var(--basic-white);
+    color: var(--basic-black);
 }
 
 .site-navigation {
-    list-style: none;
-    margin: 0 auto;
-    display: flex;
-}
-
-li {
+    min-height: 56px;
+    line-height: 26px;
     font-weight: 700;
-    padding: 30px;
 }
 
-/* User Navigation */
+.main-navigation-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 1 / -1;
+    grid-gap: 10px;
+}
 
-.site-navigation a:hover,
+.site-navigation-list {
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    list-style: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.site-navigation-item {
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.site-navigation a:hover {
+    color: var(--light-blue);
+}
 .site-navigation a:focus {
-    background-color: var(--basic-white);
+    color: var(--extra-brown);
 }
 
 .main-header-logo {
-    position: absolute;
-    top: 0;
-    left: 531px;
-    right: 531px;
-    text-align: center;
+    display: block;
+    position: relative;
+    height: 70px;
+    width: 138px;
+    margin-bottom: -70px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
 }
 
-.welcome-group {
-    text-align: center;
+/* Main Page */
+
+.welcome-group-wrapper {
     background-image: url("../img/background-index.jpg");
     background-repeat: no-repeat;
     height: 432px;
@@ -143,7 +171,6 @@ li {
    height: 216px;
    color: var(--basic-black);
    background-color: var(--basic-white);
-   text-align: center;
    height: 216px;
 }
 
@@ -168,7 +195,6 @@ li {
 
 .town-advantage {
    background-color: var(--light-blue);
-   text-align: center;
    color: var(--basic-white);
    width: 400px;
    height: 256px;
@@ -183,16 +209,23 @@ li {
 
 .advantages-paragraph {
    width: 302px;
-   text-align: center;
    margin: 0 auto;
    padding-bottom: 54px;
 }
 
+.bonuses-wrapper {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+}
+
 .bonuses {
    display: flex;
-   text-align: center;
    background-color: var(--basic-white);
    padding-top: 60px;
+}
+
+.bonuses a {
+    color: var(--basic-black);
 }
 
 .item-house {
@@ -213,19 +246,21 @@ li {
 .bonuses-text {
    color: var(--basic-brown);
    width: 254px;
+   margin: 0 auto;
+   padding-bottom: 20px;
 }
 
 .bridge {
-   display: flex;
    background: url("../img/image-2.jpg") no-repeat left;
    /* background-color: var(--light-blue); */
 }
 .bridge-advantage {
-   background-color: var(--light-blue);
-   text-align: center;
-   color: var(--basic-white);
-   width: 400px;
-   height: 256px;
+    position: relative;
+    left: 800px;
+    color: var(--basic-white);
+    width: 400px;
+    height: 256px;
+    background-color: var(--light-blue);
 }
 
 .bridge-header {
@@ -233,11 +268,20 @@ li {
 }
 
 .sedona-advantages {
-   display: flex;
    width: 1200px;
    height: 256px;
    background: var(--light-grey);
-   text-align: center;
+}
+
+.sedona-advantages-wrapper {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    height: 256px;
+}
+
+.advantages-item {
+    margin: auto;
+    padding: 40px;
 }
 
 .number, .sedona-advantages-text {
@@ -251,15 +295,14 @@ li {
 }
 
 .search {
-   text-align: center;
    background-color: var(--basic-white);
 }
-
-/* Button */
 
 .search-button {
 width: 568px;
 height: 86px;
+font-size: 21px;
+font-weight: 700;
 background-color: var(--extra-brown);
 border: none;
 vertical-align: middle;
@@ -286,17 +329,34 @@ color: var(--basic-white);
    background-image: url("../img/map.png");
    background-color: var(--basic-white);
    height: 120px;
-   display: flex;
+   /* display: flex; */
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
 }
 
 .social {
-   display: flex;
    list-style: none;
-   text-align: center;
+   padding: 0;
+}
+
+.social-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
 }
 
 .social li{
     background-color: var(--light-blue);
+    width: 46px;
+    height: 48px;
+}
+
+.copyright-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .contacts {
@@ -311,10 +371,6 @@ color: var(--basic-white);
     list-style: none;
 }
 
-.filter-list {
-    list-style: none;
-}
-
 .sorting-item {
     list-style: none;
 }
@@ -324,7 +380,16 @@ color: var(--basic-white);
 }
 
 .filter-title {
+    font-size: 16px;
     font-weight: 700;
+}
+
+.filter-list {
+    list-style: none;
+}
+
+.filter-list-item {
+    font-weight: 400;
 }
 
 .price-input {
@@ -383,8 +448,7 @@ color: var(--basic-white);
 }
 
 .hotels a {
-    text-decoration: none;
-   color: var(--basic-black);
+    color: var(--basic-black);
 }
 
 .hotels-list {
@@ -424,11 +488,9 @@ color: var(--basic-white);
 }
 
 .contacts a {
-    text-decoration: none;
     color: var(--basic-black);
 }
 
 .social a {
-    text-decoration: none;
-   color: var(--basic-black);
+    color: var(--basic-black);
 }
