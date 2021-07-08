@@ -40,23 +40,29 @@
 
 /* Global */
 
-.page-body {
-   min-width: 1200px;
-   margin: 0;
-   padding: 0;
-   font-family: "PT Sans", Arial, sans-serif;
-   font-size: 14px;
-   line-height: 21px;
-   font-weight: 400;
-   text-transform: uppercase;
-   color: var(--basic-black);
-   background-color: var(--basic-white);
-   box-shadow: 0 15px 15px var(--shadow-color);
+.page {
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+}
 
-   min-height: 100%;
-   display: grid;
-   grid-template-rows: min-content 1fr min-content;
-   align-content: start;
+.page-body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    box-shadow: 0 15px 15px var(--shadow-color);
+
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
 }
 
 .page a {
@@ -67,19 +73,15 @@
     outline-color: var(--extra-dark-blue);
 }
 
-.page {
-    height: 100%;
-    width: 1200px;
-    margin: 0 auto;
-}
+
 
 .center {
     text-align: center;
 }
 
 h3 {
-   font-size: 21px;
-   font-weight: 700;
+    font-size: 21px;
+    font-weight: 700;
 }
 
 .hidden-title {
@@ -96,7 +98,7 @@ h3 {
 /* Main Navigation */
 
 .site-navigation a {
-   color: var(--basic-black);
+    color: var(--basic-black);
 }
 
 .sorting-results a {
@@ -168,18 +170,18 @@ h3 {
 }
 
 .sedona-features {
-   height: 216px;
-   color: var(--basic-black);
-   background-color: var(--basic-white);
-   height: 216px;
+    height: 216px;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    height: 216px;
 }
 
 .sedona-features-header {
-   width: 470px;
-   margin: 0 auto;
-   line-height: 26px;
-   padding-top: 42.5px;
-   padding-bottom: 16.5px;
+    width: 470px;
+    margin: 0 auto;
+    line-height: 26px;
+    padding-top: 42px;
+    padding-bottom: 16px;
 }
 
 .sedona-features-text {
@@ -367,21 +369,22 @@ color: var(--basic-white);
 
 /* Стилизация внутренней страницы */
 
-.hotels-list {
-    list-style: none;
-}
-
-.sorting-item {
-    list-style: none;
-}
-
 .search-filter {
     color: var(--basic-white);
 }
 
-.filter-title {
-    font-size: 16px;
-    font-weight: 700;
+.checkbox-filters {
+    width: 140px;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.price-filter {
+    width: 316px;
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 .filter-list {
@@ -390,6 +393,19 @@ color: var(--basic-white);
 
 .filter-list-item {
     font-weight: 400;
+}
+
+.search-filter-grid {
+    min-height: 217px;
+    display: grid;
+    grid-template-columns: 253px 1fr 316px;
+    background: url("../img/background-catalog.jpg") no-repeat;
+    background-color: var(--light-blue);
+}
+
+.filter-title {
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .price-input {
@@ -409,28 +425,27 @@ color: var(--basic-white);
     border: 2px solid var(--basic-white);
 }
 
-.search-filter-grid {
-    display: flex;
-    /* height: 217px; */
-    background: url("../img/background-catalog.jpg") no-repeat;
-    margin-bottom: 90px;
-    background-color: var(--light-blue);
+.sorting-item {
+    list-style: none;
 }
 
 .sorting-results {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
 }
 
 .sorting-paragraph {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    padding-left: 72px;
 }
 
 .sorting-text {
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
+    padding-top: 25px;
 }
 
 .sorting-item {
@@ -452,7 +467,12 @@ color: var(--basic-white);
 }
 
 .hotels-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.hotels-list {
+    list-style: none;
 }
 
 .hotels-info {

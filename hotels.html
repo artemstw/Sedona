@@ -12,28 +12,41 @@
 </head>
 <body class="page-body">
     <header class="main-header">
-        <a class="main-header-logo" href="index.html">
-            <img src="img/logo.svg" width="138" height="70" alt="Герб города Седоны">
-        </a>
+            <a class="main-header-logo" href="index.html">
+                <img src="img/logo.svg" width="138" height="70" alt="Герб города Седоны">
+            </a>
 
-        <nav class="main-navigation">
-            <ul class="site-navigation">
-                <li class="site-navigation-item"><a href="information.html">Информация</a></li>
-                <li class="site-navigation-item"><a href="photo.html">Фото и видео</a></li>
-                <li class="site-navigation-item"><a href="map.html">Карта штата</a></li>
-                <li class="site-navigation-item"><a href="blank.html">Гостиницы</a></li>
-            </ul>
-        </nav>
+                <nav class="site-navigation">
+                    <ul class="site-navigation-list">
+                        <div class="main-navigation-wrapper">
+                            <li class="site-navigation-item"><a href="information.html">Информация</a></li>
+                            <li class="site-navigation-item"><a href="photo.html">Фото и видео</a></li>
+                            <li class="site-navigation-item"><a href="map.html">Карта штата</a></li>
+                            <li class="site-navigation-item"><a href="blank.html">Гостиницы</a></li>
+                        </div>
+                    </ul>
+                </nav>
+
         <h1 class="hidden-title">Выбор гостиницы в Седоне</h1>
     </header>
+
     <main>
+
         <section class="search-filter">
+
             <h2 class="hidden-title">Выбор дополнительных опций</h2>
-                <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru">
-                    <section class="search-filter-grid">
-                        <fieldset class="checkbox-filters">
-                            <legend class="filter-title">Инфраструктура:</legend>
+
+
+               <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru">
+
+                <section class="search-filter-grid">
+
+                    <fieldset class="checkbox-filters">
+
+                        <legend class="filter-title">Инфраструктура:</legend>
+
                             <ul class="filter-list">
+
                                 <li class="filter-list-item">
                                     <input class="input-checkbox" type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
                                     <label class="filter-label filter-text" for="filter-swimming-pool">Бассейн</label>
@@ -48,7 +61,8 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset>
+
+                        <fieldset class="checkbox-filters">
                             <legend class="filter-title">Тип жилья:</legend>
                             <ul class="filter-list">
                                 <li class="filter-list-item">
@@ -65,6 +79,7 @@
                                 </li>
                             </ul>
                         </fieldset>
+
                         <fieldset class="price-filter">
                             <legend class="filter-title">Стоимость в сутки, &#8381;:</legend>
                             <div class="filter-range">
@@ -81,10 +96,13 @@
                             <button class="filter-button" type="submit" aria-label="Показать подходящие по параметрам отели">Показать</button>
                         </fieldset>
                     </section>
-                </form>
+                </form></section>
         </section>
+
+
         <section class="sorting-results">
             <h2 class="hidden-title">Сортировка результатов поиска отеля</h2>
+
             <p class="sorting-paragraph">Найдено: 3</p>
             <span class="sorting-text">Сортировка:</span>
                 <ul class="sorting-type">
@@ -103,6 +121,7 @@
                         <path d="M5.5 10L0 0H11" fill="#81b3d2"/>
                     </svg>
                 </button>
+
             </div>
         </section>
         <section class="hotels">
@@ -208,7 +227,8 @@
             </ul>
         </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer center">
+        <div class="footer-wrapper">
         <section class="contacts">
             <p class="sedona-tag">
                 #visitSEDONA
@@ -217,6 +237,7 @@
         </section>
         <section>
             <ul class="social">
+                <div class="social-wrapper">
                 <li>
                     <a href="https://twitter.com/SedonaAZ">
                         <img src="img/icon-twitter.svg" width="46" height="48" alt="Иконка Twitter">
@@ -232,7 +253,8 @@
                         <img src="img/icon-youtube.svg" width="46" height="48" alt="Иконка YouTube">
                     </a>
                     </li>
-            </ul>
+            </div>
+        </ul>
         </section>
         <section>
             <p>
@@ -241,6 +263,7 @@
             <a class="html-logo" href="https://htmlacademy.ru/">
             <img src="img/logo-htmlacademy.svg" width="115" height="33" alt="Лого HTML-Академии">
             </a>
+        </div>
         </section>
     </footer>
 </body>
