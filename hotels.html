@@ -17,21 +17,20 @@
             </a>
                 <nav class="site-navigation">
                     <ul class="site-navigation-list">
-                        <div class="site-navigation-wrapper">
                             <li class="site-navigation-item"><a href="information.html">Информация</a></li>
                             <li class="site-navigation-item"><a href="photo.html">Фото и видео</a></li>
                             <li class="site-navigation-item"><a href="map.html">Карта штата</a></li>
                             <li class="site-navigation-item"><a href="blank.html">Гостиницы</a></li>
-                        </div>
                     </ul>
                 </nav>
-        <h1 class="hidden-title">Выбор гостиницы в Седоне</h1>
     </header>
     <main>
+        <h1 class="hidden-title">Выбор гостиницы в Седоне</h1>
         <section class="search-filter">
             <h2 class="hidden-title">Выбор дополнительных опций</h2>
                <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru">
-                <section class="search-filter-grid">
+                <section class="search-filter-wrapper">
+
                     <fieldset class="checkbox-filters">
                         <legend class="filter-title">Инфраструктура:</legend>
                             <ul class="filter-list">
@@ -49,6 +48,7 @@
                                 </li>
                             </ul>
                         </fieldset>
+
                         <fieldset class="checkbox-filters">
                             <legend class="filter-title">Тип жилья:</legend>
                             <ul class="filter-list">
@@ -66,9 +66,10 @@
                                 </li>
                             </ul>
                         </fieldset>
+
                         <fieldset class="price-filter">
                             <legend class="filter-title">Стоимость в сутки, &#8381;:</legend>
-                            <div class="filter-range">
+                            <div class="range-filter">
                                 <div class="price-controls">
                                     <input class="price-input" type="text" name="min-price" placeholder="От 0" aria-label="Минимальная стоимость в сутки">
                                     <input class="price-input" type="text" name="max-price" placeholder="До 3000" aria-label="Максимальная стоимость в сутки">
@@ -81,8 +82,10 @@
                             <button class="filter-button" type="submit" aria-label="Показать подходящие по параметрам отели">Показать</button>
                         </fieldset>
                     </section>
-                </form></section>
+                </form>
+            </section>
         </section>
+        
         <section class="sorting-results">
             <h2 class="hidden-title">Сортировка результатов поиска отеля</h2>
             <p class="sorting-paragraph">Найдено: 3</p>
@@ -201,31 +204,30 @@
             </ul>
           </section>
     </main>
-    <footer class="page-footer" >
-        <div class="footer-wrapper">
-            <section class="contacts">
-                <a class="sedona-tag" href="https://www.instagram.com/explore/tags/visitsedona/" aria-label="Поиск по тегу visitSedona" target="_blank">
-                    #visitSEDONA
-                </a>
-                <a class="sedona-phone" href="tel:+78005558628">
-                    +7 800 555-86-28
-                </a>
-            </section>
-            <section class="social">
+    <footer class="page-footer">
+        <section class="contacts">
+            <a class="sedona-tag" href="https://www.instagram.com/explore/tags/visitsedona/" aria-label="Поиск по тегу visitSedona" target="_blank">
+                #visitSEDONA
+            </a>
+            <a class="sedona-phone" href="tel:+78005558628">
+                +7 800 555-86-28
+            </a>
+        </section>
+        <section class="social">
             <ul class="social-list">
                 <li class="social-list-item">
-                    <a href="https://twitter.com/SedonaAZ" aria-label="Страница Седоны в Твиттере" target="_blank">
-                        <img src="img/icon-twitter.svg" width="16" height="15" alt="Лого Твиттера">
+                    <a class="social-link" href="https://twitter.com/SedonaAZ" aria-label="Страница Седоны в Твиттере" target="_blank">
+                        <img src="img/icon-twitter.svg" width="17" height="15" alt="Лого Твиттера">
                     </a>
                 </li>
                 <li  class="social-list-item">
-                    <a href="https://www.facebook.com/VisitSedona" aria-label="Страница Седоны в Фэйсбуке" target="_blank">
-                        <img src="img/icon-facebook.svg" width="16" height="15" alt="Лого Фэйсбук">
+                    <a class="social-link" href="https://www.facebook.com/VisitSedona" aria-label="Страница Седоны в Фэйсбуке" target="_blank">
+                        <img src="img/icon-facebook.svg" width="12" height="22" alt="Лого Фэйсбук">
                     </a>
                 </li>
                 <li class="social-list-item">
-                    <a href="https://www.youtube.com/user/SedonaAZ1" aria-label="Страница Седоны на Ютубе" target="_blank">
-                        <img src="img/icon-youtube.svg" width="16" height="15" alt="Лого Ютуба">
+                    <a class="social-link" href="https://www.youtube.com/user/SedonaAZ1" aria-label="Страница Седоны на Ютубе" target="_blank">
+                        <img src="img/icon-youtube.svg" width="20" height="16" alt="Лого Ютуба">
                     </a>
                 </li>
             </ul>
@@ -237,8 +239,7 @@
             <a class="html-logo" href="https://htmlacademy.ru/" target="_blank">
                 <img src="img/logo-htmlacademy.svg" width="115" height="33" alt="Лого HTML-Академии">
             </a>
-        </div>
         </section>
-    </footer>
+</footer>
 </body>
 </html>

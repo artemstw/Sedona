@@ -104,44 +104,6 @@ h3 {
     color: var(--basic-black);
 }
 
-.site-navigation {
-    min-height: 56px;
-    line-height: 26px;
-    font-weight: 700;
-}
-
-.site-navigation-wrapper {
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column: 1 / -1;
-    grid-gap: 10px; */
-    display: flex;
-    justify-content: space-between;
-}
-
-.site-navigation-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.site-navigation-item {
-    margin: 0 auto;
-    padding: 15px 0;
-}
-
-.site-navigation a:hover {
-    color: var(--light-blue);
-}
-.site-navigation a:focus {
-    color: var(--extra-brown);
-}
-
 .main-header-logo {
     display: block;
     position: relative;
@@ -152,6 +114,39 @@ h3 {
     margin-right: auto;
     z-index: 2;
 }
+
+.site-navigation {
+    min-height: 56px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.site-navigation-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.site-navigation-item {
+    padding: 15px 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.site-navigation a:hover {
+    color: var(--light-blue);
+}
+.site-navigation a:focus {
+    color: var(--extra-brown);
+}
+
+
 
 /* Main Page */
 
@@ -220,15 +215,20 @@ h3 {
    padding-bottom: 54px;
 }
 
-.bonuses-wrapper{
-    display: grid;
-    grid-template-columns: 400px 400px 400px;
+.bonuses-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 60px;
+    min-height: 330px;
+    background-color: var(--basic-white);
+    justify-content: space-between;
 }
 
-.bonuses {
-   display: flex;
-   background-color: var(--basic-white);
-   padding-top: 60px;
+.bonuses-item {
+    margin: 0 auto;
 }
 
 .bonuses a {
@@ -270,20 +270,30 @@ h3 {
     background-color: var(--light-blue);
 }
 
-.sedona-advantages-wrapper {
+.advantages-wrapper {
     /* display: grid;
     grid-template-columns: 400px 400px 400px; */
-    display: flex;
-    height: 256px;
     background: var(--light-grey);
 }
 
-.sedona-advantages-text {
+.advantages-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 256px;
+    justify-content: center;
+}
+
+.advantages-item {
+    padding: 10px;
+}
+
+.advantages-text {
     color: var(--basic-brown);
     margin: 0;
     padding: 0;
-    padding-left: 60px;
-    padding-right: 60px;
 }
 
 .interested-header {
@@ -328,27 +338,29 @@ h3 {
 /* Footer */
 
 .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-image: url("../img/map.png");
     background-color: var(--basic-white);
-    height: 120px;
-}
+    min-height: 120px;
+    text-align: center;
 
-.footer-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
 }
 
 .contacts {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
-    align-self: center;
     /* display: grid;
     grid-template-rows: 1fr 1fr; */
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 61px;
+    padding-left: 136px;
+    padding-bottom: 36px;
     padding-top: 23px;
-
 }
 
 .sedona-tag {
@@ -370,18 +382,35 @@ h3 {
     grid-template-columns: 46px 46px 46px;
     column-gap: 6px; */
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
 }
 
-.social li{
-    background-color: var(--light-blue);
-    align-self: center;
+.social-list-item {
+    padding: 0 3px;
 }
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 48px;
+    margin-bottom: 0px;
+    background-color: var(--light-blue);
+  }
 
 .copyright {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 50% 50%;
-    column-gap: 15px;
+    column-gap: 15px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 195px;
+    margin-right: 131px;
 }
 
 .copyright-text {
@@ -402,34 +431,24 @@ h3 {
 /* Стилизация внутренней страницы */
 
 
-
 /* Checkbox-Filters */
 
 .search-filter {
+    min-height: 217px;
     color: var(--basic-white);
     background: url("../img/background-catalog.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-left: 72px;
+    padding-right: 72px;
 }
 
 .checkbox-filters {
     width: 140px;
     border: none;
     margin: 0;
-    align-self: center;
-}
-
-.price-filter {
-    border: none;
     padding: 0;
-    margin: 0;
     align-self: center;
-}
-
-.filter-title {
-    font-size: 16px;
-    font-weight: 700;
-    padding-bottom: 23px;
-    padding-top: 26px;
 }
 
 .filter-list {
@@ -443,14 +462,62 @@ h3 {
     padding-bottom: 23px;
 }
 
-.search-filter-grid {
-    min-height: 217px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+.price-filter {
+    width: 317px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    align-self: center;
 }
 
-.price-filter .filter-title {
+.price-controls {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 312px;
+    height: 32px;
+    border-radius: 2px;
+    margin-top: 12px;
+  }
+
+  .price-input {
+    width: 50%;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    text-align: center;
+    color: var(--basic-light);
+  }
+
+.filter-title {
+    font-size: 16px;
+    font-weight: 700;
     padding-bottom: 10px;
+    padding-top: 26px;
+}
+
+.filter-button {
+    min-width: 137px;
+    min-height: 36px;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background: transparent;
+    padding: 7px 35px;
+    margin-top: 34px;
+    margin-left: 84px;
+    border: 2px solid var(--basic-white);
+    cursor: pointer;
+}
+
+.search-filter-wrapper {
+    min-height: 217px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 2fr; */
+    display: flex;
+    justify-content: space-between;
 }
 
 .price-input {
@@ -461,27 +528,18 @@ h3 {
     border: 2px solid var(--basic-white);
 }
 
-.filter-button {
-    width: 137px;
-    height: 36px;
-    color: var(--basic-white);
-    text-transform: uppercase;
-    background: transparent;
-    padding: 0;
-    margin-top: 34px;
-    border: 2px solid var(--basic-white);
-}
+
 
 /* Sorting Results */
 
-.sorting-item {
-    list-style: none;
-}
-
 .sorting-results {
-    height: 86px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 2fr;
+    min-height: 86px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr; */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 72px;
+    padding-right: 72px;
 }
 
 .sorting-paragraph {
@@ -490,7 +548,7 @@ h3 {
     font-weight: 700;
     margin: 0;
     align-self: center;
-    padding-left: 72px;
+
 }
 
 .sorting-text {
