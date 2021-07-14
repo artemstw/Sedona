@@ -31,7 +31,7 @@
                 Выбор дополнительных опций
             </h2>
                <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru">
-                <section class="search-filter-wrapper">
+                <div class="search-filter-wrapper">
                     <fieldset class="checkbox-filters">
                         <legend class="filter-title">Инфраструктура:</legend>
                             <ul class="filter-list">
@@ -75,17 +75,13 @@
                                     <input class="price-input" type="text" name="min-price" placeholder="От 0" aria-label="Минимальная стоимость в сутки">
                                     <input class="price-input" type="text" name="max-price" placeholder="До 3000" aria-label="Максимальная стоимость в сутки">
                                 </div>
-                                <div class="range-controls">
-                                    <div class="toggle toggle-min" tab-index="0" aria-label="Ползунок минимальной цены"></div>
-                                    <div class="toggle toggle-max" tab-index="0" aria-label="Ползунок максимальной цены"></div>
-                                </div>
                             </div>
                             <button class="filter-button" type="submit" aria-label="Показать подходящие по параметрам отели">Показать</button>
                         </fieldset>
-                    </section>
+                </div>
                 </form>
             </section>
-        </section>
+
 
         <section class="sorting-results">
             <h2 class="visually-hidden">Сортировка результатов поиска отеля</h2>
@@ -207,6 +203,9 @@
     </main>
     <footer class="page-footer">
         <section class="contacts">
+            <h2 class="visually-hidden">
+                Инстаграм и телефон Седоны
+            </h2>
             <a class="sedona-tag" href="https://www.instagram.com/explore/tags/visitsedona/" aria-label="Поиск по тегу visitSedona" target="_blank">
                 #visitSEDONA
             </a>
@@ -215,6 +214,9 @@
             </a>
         </section>
         <section class="social">
+            <h2 class="visually-hidden">
+                Социальные сети Седоны
+            </h2>
             <ul class="social-list">
                 <li class="social-list-item">
                     <a class="social-link" href="https://twitter.com/SedonaAZ" aria-label="Страница Седоны в Твиттере" target="_blank">
@@ -240,12 +242,14 @@
             </ul>
         </section>
         <section class="copyright">
+            <h2 class="visually-hidden">
+                Сайт разработан HTML Академией
+            </h2>
             <p class="copyright-text">
                 Website by
             </p>
             <a class="html-logo" href="https://htmlacademy.ru/" target="_blank">
-                <!-- <img src="img/logo-htmlacademy.svg" width="115" height="33" alt="Лого HTML-Академии"> -->
-                <svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 12.8691V15.4429H2.45789V12.8691H0Z" fill="black"/>
                     <path d="M11.6466 4.52562C10.0863 4.52562 8.82534 5.23341 8.03454 6.26294H7.94905V0H5.91864V15.4429H7.94905V10.1451C7.94905 8.02172 9.27418 6.49888 11.2191 6.49888C13.0572 6.49888 14.1258 7.87158 14.1258 9.71614V15.4429H16.1563V9.35153C16.1563 6.41308 14.3396 4.52562 11.6466 4.52562Z" fill="black"/>
                     <path d="M26.6171 4.82696H21.8082V1.07349H19.7778V4.82696H17.8542V6.80022H19.7778V12.7843C19.7778 14.5002 20.7396 15.4439 22.4708 15.4439H26.6171V13.4492H22.8769C22.193 13.4492 21.8082 13.0632 21.8082 12.3983V6.80022H26.6171V4.82696Z" fill="black"/>
@@ -261,6 +265,6 @@
                     </svg>
             </a>
         </section>
-</footer>
+    </footer>
 </body>
 </html>
