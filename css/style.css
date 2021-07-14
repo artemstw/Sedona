@@ -509,11 +509,23 @@
     content: "";
     position: absolute;
     left: -42px;
-    top: 0;
-    width: 16px;
-    height: 16px;
+    top: -3px;
+    width: 23px;
+    height: 23px;
     border: 2px solid var(--basic-white);
     border-radius: 15%;
+}
+
+.filter-input-checkbox:checked + label::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: -3px;
+    width: 23px;
+    height: 23px;
+    background-image: url(/img/checkmark.svg);
+    background-repeat: no-repeat;
+    background-position: 1px 1px;
 }
 
 .filter-list-item {
