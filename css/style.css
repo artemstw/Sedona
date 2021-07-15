@@ -37,6 +37,7 @@
     --extra-dark-blue: #5496bd;
     --rating-color: #666666;
     --shadow-color: rgba(0,1,1,0.2);
+    --footer-opacity-color: rgba(255, 255, 255, 0.9);
 }
 
 /* Global */
@@ -339,6 +340,12 @@
     line-height: 24px;
 }
 
+.map {
+    height: 594px;
+    background-color: var(--basic-light-brown);
+    background-image: url("../img/content/map.png");
+    margin-bottom: -120px;
+  }
 
 
 /* Footer */
@@ -348,7 +355,7 @@
     justify-content: space-between;
     align-items: center;
     background-image: url("../img/map.png");
-    background-color: var(--basic-white);
+    background-color: var(--footer-opacity-color);
     min-height: 120px;
     text-align: center;
 
@@ -512,7 +519,7 @@
     top: -3px;
     width: 27px;
     height: 23px;
-    background-image: url(/img/checkbox-off.svg);
+    background-image: url(../img/checkbox-off.svg);
     background-repeat: no-repeat;
     /* border: 2px solid var(--basic-white);
     border-radius: 15%; */
@@ -525,7 +532,7 @@
     top: -3px;
     width: 27px;
     height: 23px;
-    background-image: url(/img/checkbox-on.svg);
+    background-image: url(../img/checkbox-on.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -553,6 +560,10 @@
     border-radius: 2px;
     margin-top: 12px;
   }
+
+.price-controls input::placeholder {
+    color: var(--basic-white);
+}
 
 .search-filter-wrapper {
     min-height: 217px;
@@ -706,10 +717,10 @@
 
 .hotels-section {
     min-height: 453px;
-    background-image: url("/img/line.png"),
-                        url("/img/line.png"),
-                        url("/img/line.png"),
-                        url("/img/line.png");
+    background-image: url("../img/line.png"),
+                        url("../img/line.png"),
+                        url("../img/line.png"),
+                        url("../img/line.png");
     background-position: 0 0, 0 151px, 0 303px, 0 452px;
     background-repeat: no-repeat;
 }
@@ -831,7 +842,7 @@
     width: 18px;
     height: 18px;
     margin-left: 6px;
-    background-image: url("/img/star.svg");
+    background-image: url("../img/star.svg");
     background-repeat: no-repeat;
 }
 .star:last-child {
