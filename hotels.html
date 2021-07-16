@@ -11,8 +11,8 @@
     <link rel="icon" href="favicon.ico" />
 </head>
 <body class="page-body">
-    <header class="main-header">
-            <a class="main-header-logo" href="index.html">
+    <header class="main-header center">
+            <a class="main-header-logo">
                 <img src="../img/logo.svg" width="138" height="70" alt="Логотип сайта городка Седона">
             </a>
                 <nav class="site-navigation">
@@ -69,15 +69,26 @@
                         </fieldset>
 
                         <fieldset class="price-filter">
+
                             <legend class="filter-title">Стоимость в сутки, &#8381;:</legend>
                             <div class="range-filter">
                                 <div class="price-controls">
                                     <input class="price-input" type="text" name="min-price" placeholder="От 0" aria-label="Минимальная стоимость в сутки">
                                     <input class="price-input" type="text" name="max-price" placeholder="До 3000" aria-label="Максимальная стоимость в сутки">
                                 </div>
+
+
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <div class="toggle toggle-min" tabindex="0"></div>
+                                    <div class="toggle toggle-max" tabindex="0"></div>
+                                </div>
                             </div>
                             <button class="filter-button" type="submit" aria-label="Показать подходящие по параметрам отели">Показать</button>
                         </fieldset>
+
                 </div>
                 </form>
             </section>
