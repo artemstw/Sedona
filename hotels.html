@@ -15,26 +15,28 @@
             <a class="main-header-logo">
                 <img src="../img/logo.svg" width="138" height="70" alt="Логотип сайта городка Седона">
             </a>
-                <nav class="site-navigation">
-                    <ul class="site-navigation-list">
-                            <li class="site-navigation-item"><a href="information.html">Информация</a></li>
-                            <li class="site-navigation-item"><a href="photo.html">Фото и видео</a></li>
-                            <li class="site-navigation-item"><a href="map.html">Карта штата</a></li>
-                            <li class="site-navigation-item"><a href="blank.html">Гостиницы</a></li>
+                <nav class="main-navigation">
+                    <ul class="main-navigation-list">
+                            <li class="main-navigation-item"><a href="information.html">Информация</a></li>
+                            <li class="main-navigation-item"><a href="photo.html">Фото и видео</a></li>
+                            <li class="main-navigation-item"><a href="map.html">Карта штата</a></li>
+                            <li class="main-navigation-item"><a href="blank.html">Гостиницы</a></li>
                     </ul>
                 </nav>
     </header>
     <main>
-        <h1 class="visually-hidden">Выбор гостиницы в Седоне</h1>
+        <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
+
         <section class="search-filter">
             <h2 class="visually-hidden">
                 Выбор дополнительных опций
             </h2>
                <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru">
+
                 <div class="search-filter-wrapper">
                     <fieldset class="checkbox-filters">
                         <legend class="filter-title">Инфраструктура:</legend>
-                            <ul class="filter-list">
+                            <ul class="filter-list infrastructure-list">
                                 <li class="filter-list-item">
                                     <input class="filter-input-checkbox input-checkbox visually-hidden" type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
                                     <label class="filter-label filter-text" for="filter-swimming-pool">Бассейн</label>
@@ -52,14 +54,14 @@
 
                         <fieldset class="checkbox-filters">
                             <legend class="filter-title">Тип жилья:</legend>
-                            <ul class="filter-list">
+                            <ul class="filter-list house-type-list">
                                 <li class="filter-list-item">
                                     <input class="filter-input-checkbox input-checkbox visually-hidden" type="checkbox" name="inn" id="filter-inn" checked>
                                     <label class="filter-label filter-text" for="filter-inn">Гостиница</label>
                                 </li>
                                 <li class="filter-list-item">
                                     <input class="filter-input-checkbox input-checkbox visually-hidden" type="checkbox" name="hotel" id="filter-hotel" checked>
-                                    <label class="filter-label filter-text" for="filter-hotel">Отель</label>
+                                    <label class="filter-label filter-text" for="filter-hotel">Мотель</label>
                                 </li>
                                 <li class="filter-list-item">
                                     <input class="filter-input-checkbox input-checkbox visually-hidden" type="checkbox" name="apartments" id="filter-apartments" checked>
@@ -97,24 +99,26 @@
         <section class="sorting-results">
             <h2 class="visually-hidden">Сортировка результатов поиска отеля</h2>
             <p class="sorting-paragraph">Найдено: 3</p>
-            <span class="sorting-text">Сортировка:</span>
-            <ul class="sorting-list">
+                <span class="sorting-text">Сортировка:</span>
+                <ul class="sorting-list">
                     <li class="sorting-list-item selected-item"><a href="#">По цене</a></li>
                     <li class="sorting-list-item"><a href="#">По типу</a></li>
                     <li class="sorting-list-item"><a href="#">По рейтингу</a></li>
                 </ul>
+            
             <div class="arrows">
-                <button class="increase-arrow" aria-label="Сортировка по возрастанию цены">
-                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <button class="increase-arrow" aria-label="Сортировка по возрастанию цены">
+                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
-                    </svg>
-                </button>
-                <button class="decrease-arrow" aria-label="Сортировка по убыванию цены">
-                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        </svg>
+                    </button>
+                    <button class="decrease-arrow" aria-label="Сортировка по убыванию цены">
+                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.5 10L0 0H11" fill="#CACACA"/>
-                    </svg>
-                </button>
+                        </svg>
+                    </button>
             </div>
+
         </section>
         <section class="hotels-section">
             <h2 class="visually-hidden">Список гостиниц</h2>
